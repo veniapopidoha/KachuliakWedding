@@ -3,6 +3,7 @@ import {
   Button,
   Circle,
   CircleDiv,
+  ContactDiv,
   Contacts,
   ContactText,
   Div,
@@ -11,6 +12,7 @@ import {
   ImgComp,
   ImgMobile,
   InvitationBlock,
+  LeftDiv,
   Please,
   StyledFrame,
   SubTitle,
@@ -174,14 +176,10 @@ export const Main = () => {
         </CircleDiv>
       </DressCode>
       <Footer>
-        <div>
-          <Please>
-            будь ласка,
-            <br /> повідомте нас про змогу бути на нашому весіллі
-          </Please>
-        </div>
-        <div>
+        <LeftDiv>
           <Contacts>Контакти</Contacts>
+        </LeftDiv>
+        <ContactDiv>
           <ContactText>
             <a href='tel:+380955262502'>+380 95 526 25 02 Київстар</a>
             <br />
@@ -193,8 +191,8 @@ export const Main = () => {
             >
               @danyil.kachuliak
             </a>
-            <br />
-            <br />
+          </ContactText>
+          <ContactText>
             <a href='tel:+380678282820'>+380 67 828 28 20 Київстар</a>
             <br />
             <a href='tel:+48513577974'>+485 13 577 974 - польський</a>
@@ -206,8 +204,12 @@ export const Main = () => {
               {' '}
               @____karinee___
             </a>
-            <br />
           </ContactText>
+        </ContactDiv>
+        <div>
+          <Please>
+            будь ласка, повідомте нас про змогу бути на нашому весіллі
+          </Please>
         </div>
       </Footer>
     </div>

@@ -266,11 +266,21 @@ export const Footer = styled.footer`
   background-image: url(${back});
   background-size: cover;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
+  flex-direction: column;
   padding: 20px;
   @media screen and (max-width: 480px) {
     padding: 5px;
+  }
+`;
+
+export const LeftDiv = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  width: 65vw;
+  @media screen and (max-width: 768px) {
+    width: 80vw;
   }
 `;
 
@@ -281,6 +291,7 @@ export const Contacts = styled.h3`
   font-size: 33px;
   margin-top: 0;
   display: block;
+  text-align: left;
   /* identical to box height */
   text-transform: uppercase;
 
@@ -294,6 +305,16 @@ export const Contacts = styled.h3`
   }
   @media screen and (max-width: 480px) {
     font-size: 16px;
+  }
+`;
+
+export const ContactDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 65vw;
+  @media screen and (max-width: 768px) {
+    width: 80vw;
   }
 `;
 
@@ -325,15 +346,16 @@ export const ContactText = styled.h3`
 `;
 
 export const Please = styled.h2`
+  /* width: 65vw; */
   font-family: 'Poiret One';
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
-  text-align: right;
+  text-align: center;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  padding-right: 30px;
+  margin-bottom: 0;
 
   /* white */
   color: #ffffff;
