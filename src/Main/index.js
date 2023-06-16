@@ -170,7 +170,6 @@ export const Main = () => {
           <Circle $color='#5E6458' />
           <Circle $color='#EDE7DB' />
           <Circle $color='#EAC8BC' />
-          <Circle $color='#C3E5E3' />
           <Circle $color='#FFFFFF' />
         </CircleDiv>
       </DressCode>
