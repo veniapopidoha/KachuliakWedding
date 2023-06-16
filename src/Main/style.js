@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import back from '../img/footer.png';
 
 export const Back = styled.img`
-  height: 100vh;
+  height: fit-content;
   width: 100vw;
 `;
 
@@ -17,6 +17,14 @@ export const Text = styled.h1`
   text-transform: uppercase;
 
   color: #ffffff;
+  @media screen and (max-width: 1024px) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 17px;
+    line-height: 23px;
+  }
 `;
 
 export const Text2 = styled.h2`
@@ -32,6 +40,14 @@ export const Text2 = styled.h2`
   a {
     color: #fff;
   }
+  @media screen and (max-width: 1024px) {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+    line-height: 20px;
+  }
 `;
 
 export const InvitationBlock = styled.div`
@@ -40,6 +56,12 @@ export const InvitationBlock = styled.div`
   justify-content: center;
   img {
     width: 50vw;
+  }
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    img {
+      width: 100vw;
+    }
   }
 `;
 
@@ -53,6 +75,16 @@ export const Text3 = styled.h2`
   text-transform: uppercase;
 
   color: #ffffff;
+  @media screen and (max-width: 1024px) {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+  }
+  @media screen and (max-width: 375px) {
+    font-size: 15px;
+  }
 `;
 
 export const Text4 = styled.h2`
@@ -65,12 +97,28 @@ export const Text4 = styled.h2`
   width: 80%;
 
   color: #ffffff;
+  @media screen and (max-width: 1024px) {
+    font-size: 12px;
+    width: 90%;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 9px;
+  }
+  @media screen and (max-width: 375px) {
+    font-size: 8px;
+  }
 `;
 
 export const StyledFrame = styled.iframe`
   /* transition: 0.8s;
   ${({ $video }) => ($video ? 'display: block' : 'display: none')}; */
   margin-top: 20px;
+  width: 560px;
+  height: 315px;
+  @media screen and (max-width: 1024px) {
+    width: 90%;
+    height: fit-content;
+  }
 `;
 
 export const Button = styled.button`
@@ -87,6 +135,18 @@ export const Button = styled.button`
   background-color: #000;
   padding: 12px 28px;
   cursor: pointer;
+  @media screen and (max-width: 1024px) {
+    font-size: 14px;
+    padding: 10px 25px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 11px;
+    padding: 6px 15px;
+  }
+  @media screen and (max-width: 375px) {
+    font-size: 10px;
+    padding: 3px 10px;
+  }
 `;
 
 export const Div = styled.div`
@@ -103,8 +163,19 @@ export const Text5 = styled.h2`
   font-size: 17px;
   line-height: 150%;
   width: 90vw;
+  padding-bottom: 30px;
 
   color: #ffffff;
+  @media screen and (max-width: 1024px) {
+    font-size: 12px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 10px;
+  }
+  @media screen and (max-width: 375px) {
+    font-size: 7px;
+    line-height: 12px;
+  }
 `;
 
 export const DressCode = styled.div`
@@ -130,6 +201,17 @@ export const SubTitle = styled.h2`
   color: #ffffff;
 
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  @media screen and (max-width: 1024px) {
+    font-size: 15px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 13px;
+    line-height: 17px;
+  }
+  @media screen and (max-width: 375px) {
+    font-size: 10px;
+    line-height: 15px;
+  }
 `;
 
 export const Circle = styled.div`
@@ -139,6 +221,20 @@ export const Circle = styled.div`
   margin: 10px 20px;
 
   ${({ $color }) => `background: ${$color}`};
+  @media screen and (max-width: 1024px) {
+    width: 50px;
+    height: 50px;
+  }
+  @media screen and (max-width: 768px) {
+    width: 40px;
+    height: 40px;
+    margin: 5px 10px;
+  }
+  @media screen and (max-width: 375px) {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+  }
 `;
 
 export const CircleDiv = styled.div`
@@ -155,6 +251,9 @@ export const Footer = styled.footer`
   align-items: flex-end;
   justify-content: center;
   padding: 20px;
+  @media screen and (max-width: 480px) {
+    padding: 5px;
+  }
 `;
 
 export const Contacts = styled.h3`
@@ -169,6 +268,15 @@ export const Contacts = styled.h3`
 
   /* white */
   color: #ffffff;
+  @media screen and (max-width: 1024px) {
+    font-size: 25px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 16px;
+  }
 `;
 
 export const ContactText = styled.h3`
@@ -179,6 +287,19 @@ export const ContactText = styled.h3`
   line-height: 150%;
 
   color: #ffffff;
+  @media screen and (max-width: 1024px) {
+    font-size: 12px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 10px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 8px;
+  }
+  @media screen and (max-width: 375px) {
+    font-size: 7px;
+    line-height: 12px;
+  }
 `;
 
 export const Please = styled.h2`
@@ -194,4 +315,19 @@ export const Please = styled.h2`
 
   /* white */
   color: #ffffff;
+  @media screen and (max-width: 1024px) {
+    font-size: 17px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  @media screen and (max-width: 480px) {
+    padding-right: 8px;
+    font-size: 8px;
+  }
+  @media screen and (max-width: 375px) {
+    font-size: 7px;
+    line-height: 12px;
+  }
 `;

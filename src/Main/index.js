@@ -84,8 +84,6 @@ export const Main = () => {
           {video && (
             <StyledFrame
               $video={video}
-              width='560'
-              height='315'
               src='https://www.youtube.com/embed/9aMmbCsYNY0'
               title='YouTube video player'
               frameborder='0'
