@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import back from '../img/footer.png';
 
 export const Back = styled.img`
-  height: fit-content;
+  height: fit-content !important;
   width: 100vw;
 `;
 
