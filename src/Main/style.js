@@ -65,6 +65,23 @@ export const InvitationBlock = styled.div`
   }
 `;
 
+export const ImgMobile = styled.img`
+  display: none;
+
+  @media screen and (max-width: 480px) {
+    width: 100vw;
+    display: block;
+  }
+`;
+
+export const ImgComp = styled.img`
+  width: 50vw;
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+`;
+
 export const Text3 = styled.h2`
   font-family: 'Playfair Display', serif;
   font-style: normal;
@@ -102,10 +119,11 @@ export const Text4 = styled.h2`
     width: 90%;
   }
   @media screen and (max-width: 768px) {
-    font-size: 9px;
+    font-size: 12px;
+    font-family: 'Poiret One', cursive;
   }
   @media screen and (max-width: 375px) {
-    font-size: 8px;
+    font-size: 11px;
   }
 `;
 
@@ -164,17 +182,17 @@ export const Text5 = styled.h2`
   line-height: 150%;
   width: 90vw;
   padding-bottom: 30px;
+  text-align: justify;
 
   color: #ffffff;
   @media screen and (max-width: 1024px) {
     font-size: 12px;
   }
   @media screen and (max-width: 768px) {
-    font-size: 10px;
+    font-size: 12px;
   }
   @media screen and (max-width: 375px) {
-    font-size: 7px;
-    line-height: 12px;
+    font-size: 11px;
   }
 `;
 
@@ -280,25 +298,29 @@ export const Contacts = styled.h3`
 `;
 
 export const ContactText = styled.h3`
-  font-family: 'PT Sans', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 150%;
+  margin: 0;
+  a {
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
 
-  color: #ffffff;
-  @media screen and (max-width: 1024px) {
-    font-size: 12px;
-  }
-  @media screen and (max-width: 768px) {
-    font-size: 10px;
-  }
-  @media screen and (max-width: 480px) {
-    font-size: 8px;
-  }
-  @media screen and (max-width: 375px) {
-    font-size: 7px;
-    line-height: 12px;
+    color: #ffffff;
+    @media screen and (max-width: 1024px) {
+      font-size: 12px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 10px;
+    }
+    @media screen and (max-width: 480px) {
+      font-size: 8px;
+    }
+    @media screen and (max-width: 375px) {
+      font-size: 7px;
+      line-height: 12px;
+    }
   }
 `;
 
