@@ -385,13 +385,13 @@ export const CarouselImages = styled.img`
     height: 250px;
   }
   @media screen and (max-width: 768px) {
-    height: 150px;
+    height: 200px;
   }
   @media screen and (max-width: 480px) {
-    height: 100px;
+    height: 150px;
   }
   @media screen and (max-width: 375px) {
-    height: 80px;
+    height: 150px;
   }
 `;
 
