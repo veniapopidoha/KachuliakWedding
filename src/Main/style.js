@@ -375,3 +375,26 @@ export const Please = styled.h2`
     line-height: 12px;
   }
 `;
+
+export const CarouselImages = styled.img`
+  height: 400px;
+  @media screen and (max-width: 1440px) {
+    height: 300px;
+  }
+  @media screen and (max-width: 1024px) {
+    height: 250px;
+  }
+  @media screen and (max-width: 768px) {
+    height: 150px;
+  }
+  @media screen and (max-width: 480px) {
+    height: 100px;
+  }
+  @media screen and (max-width: 375px) {
+    height: 80px;
+  }
+`;
+
+export const CarouselDiv = styled.div`
+  padding: 50px 0;
+`;

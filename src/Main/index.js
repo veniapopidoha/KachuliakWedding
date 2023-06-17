@@ -22,11 +22,13 @@ import {
   Text4,
   Text5,
 } from './style';
+
 import back from '../img/back.png';
 import karina from '../img/karina.png';
 import danik from '../img/danik.png';
 import dvoe from '../img/dvoe.JPG';
 import { useState } from 'react';
+import SimpleSlider from './Carousel';
 
 export const Main = () => {
   const [video, setVideo] = useState(false);
@@ -50,7 +52,6 @@ export const Main = () => {
           <ImgMobile src={dvoe} />
         </div>
       </InvitationBlock>
-
       <InvitationBlock>
         <div>
           <ImgComp src={danik} />
@@ -175,6 +176,7 @@ export const Main = () => {
           <Circle $color='#FFFFFF' />
         </CircleDiv>
       </DressCode>
+      <SimpleSlider />
       <Footer>
         <LeftDiv>
           <Contacts>Контакти</Contacts>
